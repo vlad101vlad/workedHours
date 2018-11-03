@@ -23,21 +23,20 @@ Partial Class insertShiftForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DateLabel = New System.Windows.Forms.Label()
-        Me.dateTB = New System.Windows.Forms.TextBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.checkInLabel = New System.Windows.Forms.Label()
-        Me.checkOutLabel = New System.Windows.Forms.Label()
-        Me.hours1Label = New System.Windows.Forms.Label()
-        Me.hours2Label = New System.Windows.Forms.Label()
-        Me.minutes1Label = New System.Windows.Forms.Label()
-        Me.minutes2Label = New System.Windows.Forms.Label()
-        Me.hoursCITB = New System.Windows.Forms.TextBox()
-        Me.hoursCOTB = New System.Windows.Forms.TextBox()
-        Me.minutesCITB = New System.Windows.Forms.TextBox()
         Me.minutesCOTB = New System.Windows.Forms.TextBox()
+        Me.minutesCITB = New System.Windows.Forms.TextBox()
+        Me.hoursCOTB = New System.Windows.Forms.TextBox()
+        Me.minutes2Label = New System.Windows.Forms.Label()
+        Me.minutes1Label = New System.Windows.Forms.Label()
+        Me.hours2Label = New System.Windows.Forms.Label()
+        Me.checkOutLabel = New System.Windows.Forms.Label()
+        Me.checkInLabel = New System.Windows.Forms.Label()
+        Me.hours1Label = New System.Windows.Forms.Label()
+        Me.hoursCITB = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -53,20 +52,13 @@ Partial Class insertShiftForm
         Me.DateLabel.TabIndex = 0
         Me.DateLabel.Text = "Date:"
         '
-        'dateTB
-        '
-        Me.dateTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.dateTB.Location = New System.Drawing.Point(87, 46)
-        Me.dateTB.Name = "dateTB"
-        Me.dateTB.Size = New System.Drawing.Size(100, 32)
-        Me.dateTB.TabIndex = 1
-        '
         'DateTimePicker1
         '
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(193, 52)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(87, 44)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(50, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(151, 32)
         Me.DateTimePicker1.TabIndex = 2
         '
         'Label2
@@ -118,95 +110,13 @@ Partial Class insertShiftForm
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(335, 82)
         Me.TableLayoutPanel1.TabIndex = 7
         '
-        'checkInLabel
+        'minutesCOTB
         '
-        Me.checkInLabel.AutoSize = True
-        Me.checkInLabel.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.checkInLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.checkInLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.checkInLabel.Location = New System.Drawing.Point(3, 0)
-        Me.checkInLabel.Name = "checkInLabel"
-        Me.checkInLabel.Size = New System.Drawing.Size(126, 42)
-        Me.checkInLabel.TabIndex = 0
-        Me.checkInLabel.Text = "Check in:"
-        Me.checkInLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'checkOutLabel
-        '
-        Me.checkOutLabel.AutoSize = True
-        Me.checkOutLabel.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.checkOutLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.checkOutLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.checkOutLabel.Location = New System.Drawing.Point(3, 42)
-        Me.checkOutLabel.Name = "checkOutLabel"
-        Me.checkOutLabel.Size = New System.Drawing.Size(126, 40)
-        Me.checkOutLabel.TabIndex = 3
-        Me.checkOutLabel.Text = "Check out:"
-        Me.checkOutLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'hours1Label
-        '
-        Me.hours1Label.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.hours1Label.AutoSize = True
-        Me.hours1Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.hours1Label.Location = New System.Drawing.Point(135, 8)
-        Me.hours1Label.Name = "hours1Label"
-        Me.hours1Label.Size = New System.Drawing.Size(29, 26)
-        Me.hours1Label.TabIndex = 4
-        Me.hours1Label.Text = "H"
-        Me.hours1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'hours2Label
-        '
-        Me.hours2Label.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.hours2Label.AutoSize = True
-        Me.hours2Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.hours2Label.Location = New System.Drawing.Point(135, 49)
-        Me.hours2Label.Name = "hours2Label"
-        Me.hours2Label.Size = New System.Drawing.Size(29, 26)
-        Me.hours2Label.TabIndex = 12
-        Me.hours2Label.Text = "H"
-        Me.hours2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'minutes1Label
-        '
-        Me.minutes1Label.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.minutes1Label.AutoSize = True
-        Me.minutes1Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.minutes1Label.Location = New System.Drawing.Point(215, 8)
-        Me.minutes1Label.Name = "minutes1Label"
-        Me.minutes1Label.Size = New System.Drawing.Size(31, 26)
-        Me.minutes1Label.TabIndex = 13
-        Me.minutes1Label.Text = "M"
-        Me.minutes1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'minutes2Label
-        '
-        Me.minutes2Label.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.minutes2Label.AutoSize = True
-        Me.minutes2Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.minutes2Label.Location = New System.Drawing.Point(215, 49)
-        Me.minutes2Label.Name = "minutes2Label"
-        Me.minutes2Label.Size = New System.Drawing.Size(31, 26)
-        Me.minutes2Label.TabIndex = 14
-        Me.minutes2Label.Text = "M"
-        Me.minutes2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'hoursCITB
-        '
-        Me.hoursCITB.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.hoursCITB.Location = New System.Drawing.Point(170, 3)
-        Me.hoursCITB.Name = "hoursCITB"
-        Me.hoursCITB.Size = New System.Drawing.Size(39, 32)
-        Me.hoursCITB.TabIndex = 15
-        '
-        'hoursCOTB
-        '
-        Me.hoursCOTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.hoursCOTB.Location = New System.Drawing.Point(170, 45)
-        Me.hoursCOTB.Name = "hoursCOTB"
-        Me.hoursCOTB.Size = New System.Drawing.Size(39, 32)
-        Me.hoursCOTB.TabIndex = 16
+        Me.minutesCOTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.minutesCOTB.Location = New System.Drawing.Point(252, 44)
+        Me.minutesCOTB.Name = "minutesCOTB"
+        Me.minutesCOTB.Size = New System.Drawing.Size(39, 32)
+        Me.minutesCOTB.TabIndex = 18
         '
         'minutesCITB
         '
@@ -216,13 +126,95 @@ Partial Class insertShiftForm
         Me.minutesCITB.Size = New System.Drawing.Size(39, 32)
         Me.minutesCITB.TabIndex = 17
         '
-        'minutesCOTB
+        'hoursCOTB
         '
-        Me.minutesCOTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.minutesCOTB.Location = New System.Drawing.Point(252, 45)
-        Me.minutesCOTB.Name = "minutesCOTB"
-        Me.minutesCOTB.Size = New System.Drawing.Size(39, 32)
-        Me.minutesCOTB.TabIndex = 18
+        Me.hoursCOTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.hoursCOTB.Location = New System.Drawing.Point(170, 44)
+        Me.hoursCOTB.Name = "hoursCOTB"
+        Me.hoursCOTB.Size = New System.Drawing.Size(39, 32)
+        Me.hoursCOTB.TabIndex = 16
+        '
+        'minutes2Label
+        '
+        Me.minutes2Label.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.minutes2Label.AutoSize = True
+        Me.minutes2Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.minutes2Label.Location = New System.Drawing.Point(215, 48)
+        Me.minutes2Label.Name = "minutes2Label"
+        Me.minutes2Label.Size = New System.Drawing.Size(31, 26)
+        Me.minutes2Label.TabIndex = 14
+        Me.minutes2Label.Text = "M"
+        Me.minutes2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'minutes1Label
+        '
+        Me.minutes1Label.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.minutes1Label.AutoSize = True
+        Me.minutes1Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.minutes1Label.Location = New System.Drawing.Point(215, 7)
+        Me.minutes1Label.Name = "minutes1Label"
+        Me.minutes1Label.Size = New System.Drawing.Size(31, 26)
+        Me.minutes1Label.TabIndex = 13
+        Me.minutes1Label.Text = "M"
+        Me.minutes1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'hours2Label
+        '
+        Me.hours2Label.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.hours2Label.AutoSize = True
+        Me.hours2Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.hours2Label.Location = New System.Drawing.Point(135, 48)
+        Me.hours2Label.Name = "hours2Label"
+        Me.hours2Label.Size = New System.Drawing.Size(29, 26)
+        Me.hours2Label.TabIndex = 12
+        Me.hours2Label.Text = "H"
+        Me.hours2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'checkOutLabel
+        '
+        Me.checkOutLabel.AutoSize = True
+        Me.checkOutLabel.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.checkOutLabel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.checkOutLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.checkOutLabel.Location = New System.Drawing.Point(3, 41)
+        Me.checkOutLabel.Name = "checkOutLabel"
+        Me.checkOutLabel.Size = New System.Drawing.Size(126, 41)
+        Me.checkOutLabel.TabIndex = 3
+        Me.checkOutLabel.Text = "Check out:"
+        Me.checkOutLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'checkInLabel
+        '
+        Me.checkInLabel.AutoSize = True
+        Me.checkInLabel.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.checkInLabel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.checkInLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.checkInLabel.Location = New System.Drawing.Point(3, 0)
+        Me.checkInLabel.Name = "checkInLabel"
+        Me.checkInLabel.Size = New System.Drawing.Size(126, 41)
+        Me.checkInLabel.TabIndex = 0
+        Me.checkInLabel.Text = "Check in:"
+        Me.checkInLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'hours1Label
+        '
+        Me.hours1Label.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.hours1Label.AutoSize = True
+        Me.hours1Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.hours1Label.Location = New System.Drawing.Point(135, 7)
+        Me.hours1Label.Name = "hours1Label"
+        Me.hours1Label.Size = New System.Drawing.Size(29, 26)
+        Me.hours1Label.TabIndex = 4
+        Me.hours1Label.Text = "H"
+        Me.hours1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'hoursCITB
+        '
+        Me.hoursCITB.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.hoursCITB.Location = New System.Drawing.Point(170, 3)
+        Me.hoursCITB.Name = "hoursCITB"
+        Me.hoursCITB.Size = New System.Drawing.Size(39, 32)
+        Me.hoursCITB.TabIndex = 15
         '
         'insertShiftForm
         '
@@ -234,7 +226,6 @@ Partial Class insertShiftForm
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.dateTB)
         Me.Controls.Add(Me.DateLabel)
         Me.Name = "insertShiftForm"
         Me.Text = "Shift"
@@ -246,7 +237,6 @@ Partial Class insertShiftForm
     End Sub
 
     Friend WithEvents DateLabel As Label
-    Friend WithEvents dateTB As TextBox
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
