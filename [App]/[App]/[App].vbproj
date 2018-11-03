@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="shiftForm.Designer.vb">
+      <DependentUpon>shiftForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="shiftForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="menu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="shiftForm.resx">
+      <DependentUpon>shiftForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.vb</DependentUpon>
     </EmbeddedResource>
